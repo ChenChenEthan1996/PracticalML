@@ -92,3 +92,8 @@ prediction_02 <- predict(RF, subTesting, type = "class")
 ```{r warning=FALSE, error=FALSE}
 confusionMatrix(prediction_02, subTesting$classe)
 ```
+
+
+# Predicted outcome levels on the original Testing data set using Random Forest algorithm
+predict20 <- predict(RF, testingset, type="class")
+predict20
