@@ -10,8 +10,8 @@ library(rpart.plot) # Decision Tree plot
 set.seed(6666)
 ```
 
-# Loading the training data set and testing data while replacing all missing with "NA"
 ```{r warning=FALSE, error=FALSE}
+# Loading the training data set and testing data while replacing all missing with "NA"
 trainingset <- read.csv("C:/Users/Chen Chen/Desktop/8、Practical Machine Learning/pml-training.csv", na.strings=c("NA","#DIV/0!", ""))
 testingset <- read.csv("C:/Users/Chen Chen/Desktop/8、Practical Machine Learning/pml-testing.csv", na.strings=c("NA","#DIV/0!", ""))
 ```
