@@ -702,6 +702,12 @@ confusionMatrix(prediction_02, subTesting$classe)</code></pre>
 ## Detection Rate         0.2843   0.1925   0.1743   0.1627   0.1831
 ## Detection Prevalence   0.2851   0.1925   0.1760   0.1631   0.1833
 ## Balanced Accuracy      0.9991   0.9974   0.9990   0.9960   0.9982</code></pre>
+<pre class="r"><code># predict outcome levels on the original Testing data set using Random Forest algorithm
+predict20 &lt;- predict(RF, testingset, type=&quot;class&quot;)
+predict20</code></pre>
+<pre><code>##  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 
+##  B  A  B  A  A  E  D  B  A  A  B  C  B  A  E  E  A  B  B  B 
+## Levels: A B C D E</code></pre>
 </div>
 
 
